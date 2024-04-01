@@ -1,0 +1,10 @@
+
+
+{%extends 'base_layout.html'%}
+
+{%block content%}
+<body>
+    <h1>PATIENT ACCOUNT</h1>
+    <p><a type="button" id="homepage-btn" class="btn btn-outline-warning btn-lg" href="{%url 'accounts:myaccount_p' pk_test=user.id%}"> My Account</a></p>
+</body>
+{%endblock%}

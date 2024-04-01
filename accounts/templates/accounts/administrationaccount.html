@@ -1,0 +1,11 @@
+
+
+{%extends 'base_layout.html'%}
+
+{%block content%}
+<body>
+    <h1>ADMINISTRATION</h1>
+    <p><a type="button" id="homepage-btn" class="btn btn-outline-warning btn-lg" href="{%url 'accounts:testlist'%}">Temporary Surgeries</a></p>
+    <p><a type="button" id="homepage-btn" class="btn btn-outline-warning btn-lg" href="{%url 'patients:articles'%}">Fixed Surgeries</a></p>
+</body>
+{%endblock%}

@@ -1,0 +1,23 @@
+
+{%extends 'base_layout.html'%}
+{% load bootstrap_icons %}
+
+{%block content%}
+<body class="homepage">
+    
+
+    <div class="container">
+        <div class="left-container">
+            {% comment %} includes the left image {% endcomment %}
+
+        </div>
+        <div class="right-container">
+            {% comment %} Includes the content {% endcomment %}
+            <h1>DOCTOR ACCOUNT</h1>
+            <p><a type="button" id="homepage-btn" class="btn btn-outline-warning btn-lg" href="{%url 'accounts:myaccount_d' pk_test=user.id%}">{% bs_icon 'person-circle' %} My Account</a></p>
+            <p><a type="button" id="homepage-btn" class="btn btn-outline-warning btn-lg" href="{%url 'patients:articles'%}">{% bs_icon 'activity' %} Surgeries</a></p>
+            <p><a type="button" id="homepage-btn" class="btn btn-outline-warning btn-lg" href="{%url 'accounts:new'%}">{% bs_icon 'plus-circle' %} New Surgery</a></p>
+        </div>
+    </div>
+</body>
+{%endblock%}
