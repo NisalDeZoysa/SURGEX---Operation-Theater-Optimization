@@ -1,0 +1,32 @@
+
+
+{%extends 'base_layout.html'%}
+
+{%block content%}
+<div class="patient-details">
+    <div class="patient">
+        <h2>Name : {{Patient.name}}</h2>
+        <p>Age : {{Patient.age}}</p>
+        <p>NIC : {{Patient.NIC}}</p>
+        <p>Gender : {{Patient.gender}}</p>
+        <p>BMI : {{Patient.BMI}}</p>
+        <p>Situation : {{Patient.situation}}</p>
+        <p>Seriousness : {{Patient.seriousness}}</p>
+        <p>Surgery type : {{Patient.surgery_type}}</p>
+        <p>Time slots : {{Patient.time_slots}}</p>
+        <p>Urgancy : {{Patient.urgancy}}</p>
+        <p>Category : {{Patient.category}}</p>
+        <p>Nature of surgery : {{Patient.nature_of_surgery}}</p>
+        <p>Surgery time : {{Patient.surgery_time}}</p>
+        <p>Date of visit : {{Patient.date_of_visit_day}}/{{Patient.date_of_visit_month}}/{{Patient.date_of_visit_year}}</p>
+        <p>Oparation deadline : {{Patient.oparation_deadline_day}}/{{Patient.oparation_deadline_month}}/{{Patient.oparation_deadline_year}}</p>
+        <p>Veto days : {{Patient.veto_days_day}}/{{Patient.veto_days_month}}/{{Patient.veto_days_year}}</p>
+        <p>Surgery date : {{Patient.surgery_date_day}}/{{Patient.surgery_date_month}}/{{Patient.surgery_date_year}}</p>
+
+
+    </div>
+</div>
+{%endblock%}
+
+
+

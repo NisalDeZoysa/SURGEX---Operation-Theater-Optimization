@@ -1,0 +1,10 @@
+.left-container {
+    background: url(/static/doctor.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+/* body {
+    background-color: rgb(54, 35, 35);
+} */

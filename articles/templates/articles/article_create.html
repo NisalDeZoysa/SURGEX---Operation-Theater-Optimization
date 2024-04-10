@@ -1,0 +1,22 @@
+{%extends 'base_layout.html'%}
+
+{% load crispy_forms_tags %}
+
+{%block content%}
+<body class="homepage">
+    <div class="create-article">
+        <div class="article-content">
+        <h2>Surgery Information</h2>
+        <form action="{%url 'accounts:new'%}" method="POST">
+            {%csrf_token%}
+            {{form|crispy}}
+            <br>
+            <input class="btn btn-outline-warning btn-lg" type="reset" name="Reset">
+            <input class="btn btn-outline-warning btn-lg" type="submit" name="Submit">
+            
+        </form>
+    </div>
+
+    </div>
+</body>
+{%endblock%}

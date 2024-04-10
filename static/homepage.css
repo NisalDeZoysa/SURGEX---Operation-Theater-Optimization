@@ -1,0 +1,41 @@
+.homepage {
+    background-color: rgba(104, 42, 42, 0.616);
+}
+
+
+.left-container{
+    /* background-image: url(/static/stars.jpg); */
+    display: flex;
+    flex: 1;
+    background-color: yellow;
+    background-image: url(/static/logo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+
+    margin: 0;
+    padding: 0;
+}
+
+.right-container {
+    flex: 1;
+    display: flex;
+    float: right;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    background-color: rgb(104, 42, 42);
+    color: rgb(236, 159, 70);
+}
+
+#homepage-btn {
+    width: 400px;
+    margin: 2;
+}

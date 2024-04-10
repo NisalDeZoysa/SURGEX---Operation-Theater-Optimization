@@ -1,0 +1,22 @@
+{%extends 'base_layout.html'%}
+
+{%block content%}
+
+    <body>
+        <h1>List of surgeries</h1>
+        <div class ="patients">
+            {% for patient in Patients %}
+                <div class = "patient">
+                    <h2><a href="{%url 'patients:detail' slug=patient.NIC%}">{{patient.name}}</a></h2>
+                    <p>{{patient.age}}</p>
+                    <p>{{patient.NIC}}</p>
+                    <p>{{patient.surgery_date_day}}/{{patient.surgery_date_month}}/{{patient.surgery_date_year}}</p>
+                    <p>{{patient.surgery_time}}</p>
+                    
+                </div>
+
+            {% endfor %}
+        </div>
+            
+    </body>
+{%endblock%}

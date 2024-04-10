@@ -1,0 +1,21 @@
+{%extends 'base_layout.html'%}
+
+{%block content%}
+    <body class="homepage">
+        
+
+        <div class="container">
+            <div class="left-container">
+                {% comment %} includes the left image {% endcomment %}
+
+            </div>
+            <div class="right-container">
+                {% comment %} Includes the content {% endcomment %}
+                <h1>Dashboard</h1>
+                <a type="button" id="homepage-btn" class="btn btn-outline-warning btn-lg" href="{%url 'accounts:login_patient'%}"> Patient</a>
+                <a type="button" id="homepage-btn" class="btn btn-outline-warning btn-lg" href="{%url 'accounts:login_doctor'%}"> Doctor</a>
+                <a type="button" id="homepage-btn" class="btn btn-outline-warning btn-lg" href="{%url 'accounts:administration'%}" > Administraion</a>
+            </div>
+        </div>
+    </body>
+{%endblock%}
